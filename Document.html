@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/bootstrap-icons.css">
+  </head>
+  <body>
+    <!--! Navbar Start -->
+    <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">StarWars</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">AnaSayfa</li>
+            <li class="menu-list-item">Filmler</li>
+            <li class="menu-list-item">Diziler</li>
+            <li class="menu-list-item">Listem</li>
+            <li class="menu-list-item">Popüler</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="./Document_files/pro.jpg" alt="">
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+          <div class="toggle">
+            <i class="bi bi-moon-fill toggle-icon"></i>
+            <i class="bi bi-brightness-low-fill toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! Navbar End  -->
+    <!--! Sidebar Start -->
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <i class="bi bi-house-door-fill"></i>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmarks-fill"></i>
+      <i class="bi bi-hourglass-top"></i>
+      <i class="bi bi-cart-fill"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--! Sidebar end -->
+    <!-- Featured Content Start -->
+    <div class="container">
+      <div class="contant-wrapper">
+        <img class="featured-title" src="./Document_files/star_wars_logo_PNG34.png" alt="">
+        <p class="featured-desc">
+          Star Wars serisinin en yeni filmi Son Jedi sinemalardayken, bu evreni
+          merak edip bir türlü nereden başlayacağını bilemeyenler için ve
+          “filmler yetmedi, bana başka şeyler lazım!” diyen hayranlar için bir
+          rehber hazırladık. Seride 'Orjinal', 'Prequel' ve 'Yeni' olmak üzere
+           şeklinde ilerleseler de; buradaki sıraya göre izlerseniz hikayeyi
+          kronolojik olarak takip edebilirsiniz. Ama bir uyarımız var; serinin
+          4,5 ve 6 olarak geçen filmleri bundan 40 yıl önce yapıldı. Görüntü ve
+          efektlerin kalitesi haliyle ona göre olacaktır. Lütfen bu durumun
+          bilincinde olarak izleyin, hikayenin en güzel kısımlarını kaçırmayın.
+        </p>
+        <div class="featured-buttons">
+          <button>
+            <i class="bi bi-play-circle"></i>
+            Oynat
+          </button>
+          <button>
+            <i class="bi bi-info-circle"></i>
+            Daha Fazla Bilgi
+          </button>
+        </div>
+      </div>
+       <!-- Featured Content End -->
+          üç tane üçleme bulunuyor. Çıkış tarihlerine göre 4,5,6,1,2,3,7,8
+   </div>
+    <!-- Featured Content End -->
+    <!--! Content Start -->
+    <!--! Content End -->
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
