@@ -83,7 +83,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 1px;
-  transition: .5s ease-in all;
+  transition: 0.5s ease-in all;
 }
 /*! Navbar End */
 /*! Sidebar Start */
@@ -118,8 +118,12 @@ body {
   background-size: 100% 100%;
 }
 .featured-title-box {
-  padding-top: 380px;
-  padding-left: 370px;
+
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  top: 55vh;
+
 }
 .featured-title {
   height: 160px;
@@ -195,7 +199,7 @@ body {
   transform: translateX(0);
   transition: 1s all ease-in-out;
 }
-.movie-list-wrapper{
+.movie-list-wrapper {
   overflow: hidden;
   position: relative;
 }
@@ -240,28 +244,28 @@ body {
 .movie-item-buttons i:hover {
   opacity: 1;
 }
-.movie-item:hover  .movie-item-title ,
-.movie-item:hover  .movie-item-buttons{
+.movie-item:hover .movie-item-title,
+.movie-item:hover .movie-item-buttons {
   opacity: 1;
 }
-.movie-item:hover  .movie-item-img{
-transform: scale(1.2);
-margin: 0 30;
-opacity: .5;
+.movie-item:hover .movie-item-img {
+  transform: scale(1.2);
+  margin: 0 30;
+  opacity: 0.5;
 }
 
-.arrow{
+.arrow {
   width: 100px;
   display: flex;
   font-size: 120px;
   position: absolute;
   right: 0;
   top: 100px;
-  opacity: .5;
+  opacity: 0.5;
   transition: 0.5s ease all;
   cursor: pointer;
 }
-.arrow:hover{
+.arrow:hover {
   opacity: 1;
 }
 /*! Movie List End */
@@ -274,47 +278,58 @@ opacity: .5;
   background-color: white;
   color: black;
 }
-.sidebar.active{
+.sidebar.active {
   background-color: white;
 }
-.sidebar i.active{
+.sidebar i.active {
   color: black;
 }
 .movie-list-title.active {
   color: black;
-
 }
-.toggle.active{
+.toggle.active {
   background-color: black;
 }
-.toggle-ball.active{
+.toggle-ball.active {
   background-color: white;
   transform: translateX(-20px);
 }
-.movie-list-filter select.active{
+.movie-list-filter select.active {
   background-color: white;
   color: black;
 }
 /*! DArk Mode End  */
 /*!!!!!! REsponsive Start  */
-@media only screen and (max-width:800px){
-  .menu-container{
-display: none;
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    display: none;
   }
-  .featured-content{
+  .featured-content {
     height: 50vh;
   }
-  .featured-title{
+  .featured-title {
     width: 200px;
   }
-  .featured-desc{
-    overflow:hidden;
+  .featured-desc {
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     max-width: 200px;
   }
-  
 }
 /*!!!!!! REsponsive End */
 /* Eksikliklerim mevcut geliştirmeye Devamkee */
 
+
+@media screen and (max-width: 800px ) {
+  .featured-title-box{
+
+  }
+  .taraf{
+    font-size: 20px;
+  }
+  .featured-title{
+    height: 100px;
+
+  }
+}
